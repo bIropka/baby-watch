@@ -4,7 +4,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if (isset($_POST['phone-2'])) {$phone = $_POST['phone-2'];}
     if (isset($_POST['formData'])) {$formData = $_POST['formData'];}
 
-    $to = "manager@web-365.ru"; /*Укажите адрес, на который должно приходить письмо*/
+    $to = "office@web-365.ru"; /*Укажите адрес, на который должно приходить письмо*/
     $sendfrom   = "Baby-Watch"; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
     $headers  = "From: " . strip_tags($sendfrom) . "\r\n";
     $headers .= "Reply-To: ". strip_tags($sendfrom) . "\r\n";
