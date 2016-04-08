@@ -95,14 +95,20 @@ nav {
     vertical-align: middle;
 }
 nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
     font-size: 16px;
     text-transform: uppercase;
-    margin: 0 15px;
     cursor: pointer;
     line-height: 60px;
+    text-decoration: none;
 }
-nav ul li:hover {
+nav ul li a:hover {
     text-decoration: underline;
+}
+nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
+    outline: none;
 }
 
 .header .block-get-in-touch {
@@ -867,4 +873,20 @@ nav ul li:hover {
 }
 .form-ok .title {
     text-align: center;
+}
+.form-ok-button {
+    display: block;
+    font-size: 28px;
+    width: 200px;
+    height: 55px;
+    background: #cb3b3b;
+    color: white;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 3px 3px 0 1px #9e2d2d;
+    -moz-box-shadow: 3px 3px 0 1px #9e2d2d;
+    box-shadow: 3px 3px 0 1px #9e2d2d;
+    text-transform: uppercase;
+    margin: 0 auto;
 }

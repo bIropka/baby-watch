@@ -1,5 +1,11 @@
 $(document).ready(function () {
 
+    $('a[href^="#"]').click(function(){
+        var target = $(this).attr('href');
+        $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+        return false;
+    });
+
     $('.slider').slick({
         dots: true,
         autoplay: true,
@@ -57,7 +63,7 @@ $(document).ready(function () {
     $('.window-ok').click(function (event) {
         $target = $(event.target);
         if (!$target.closest($('.form-ok')).length) $('.window-ok').fadeOut();
-        if ($target.hasClass('.form-ok button')) $('.window-ok').fadeOut();
+        if ($target.hasClass('form-ok-button')) $('.window-ok').fadeOut();
     });
     /////////////////////
 

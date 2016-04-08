@@ -24,10 +24,10 @@
 
         <nav>
             <ul>
-                <li>КАК ЗАКАЗАТЬ</li>
-                <li>ВИДЕООБЗОР</li>
-                <li>ОТЗЫВЫ</li>
-                <li>ВОПРОСЫ - ответы</li>
+                <li><a href="#how-to-order">КАК ЗАКАЗАТЬ</a></li>
+                <li><a href="#video">ВИДЕООБЗОР</a></li>
+                <li><a href="#reviews">ОТЗЫВЫ</a></li>
+                <li><a href="#q-a">ВОПРОСЫ - ответы</a></li>
             </ul>
         </nav>
 
@@ -59,15 +59,15 @@
             <span>даже когда вы не вместе!</span>
         </div>
 
-        <form id="order-1" class="form-order" action="mail.php">
+        <form id="form-1" class="form-order" action="mail-1.php">
             <div class="title">
                 Успейте купить
                 <span>со <span>СКИДКОЙ!</span></span>
             </div>
-            <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Ваше имя:"/></label>
-            <label class="form-field-wrap"><input class="form-field" name="email" type="text" placeholder="Ваш E-mail:"/></label>
-            <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Ваш телефон:"/></label>
-            <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
+            <label class="form-field-wrap"><input id="name-1" class="form-field" name="name-1" type="text" placeholder="Ваше имя:" required/></label>
+            <label class="form-field-wrap"><input id="email-1" class="form-field" name="email-1" type="text" placeholder="Ваш E-mail:" required/></label>
+            <label class="form-field-wrap"><input id="phone-1" class="form-field" name="phone-1" type="text" placeholder="Ваш телефон:" required/></label>
+            <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
             <div class="text">До конца <span>АКЦИИ</span> осталось:</div>
             <div class="timer"></div>
         </form>
@@ -155,7 +155,7 @@
 
 </div>
 
-<div class="block-how-to-order">
+<div id="how-to-order" class="block-how-to-order">
 
         <div class="content-block">
 
@@ -233,7 +233,7 @@
 
 </div>
 
-<div class="block-video">
+<div id="video" class="block-video">
 
     <div class="content-block">
 
@@ -256,7 +256,7 @@
 
 </div>
 
-<div class="block-reviews">
+<div id="reviews" class="block-reviews">
 
     <div class="content-block">
 
@@ -327,7 +327,7 @@
 
 </div>
 
-<div class="block-question-answer content-block">
+<div id="q-a" class="block-question-answer content-block">
 
     <div class="title">ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ НАШИХ КЛИЕНТОВ</div>
 
@@ -424,31 +424,30 @@
 </div>
 
 <div class="bc-window window-callback">
-    <form action="mail.php" class="bc-form form-callback">
+    <form id="form-2" action="mail-1.php" class="bc-form form-callback">
         <div class="close-marker">&#215;</div>
         <div class="title">Заполните, и мы Вам перезвоним</div>
-        <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Телефон:"/></label>
+        <label class="form-field-wrap"><input id="name-2" class="form-field" name="name-2" type="text" placeholder="Имя:" required/></label>
+        <label class="form-field-wrap"><input id="phone-2" class="form-field" name="phone-2" type="text" placeholder="Телефон:" required/></label>
         <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
     </form>
 </div>
 
 <div class="bc-window window-order">
-    <form class="bc-form form-order" action="mail.php">
+    <form id="form-3" class="bc-form form-order" action="mail-1.php">
         <div class="close-marker">&#215;</div>
         <div class="title">Заполните, чтобы заказать <span>ЧАСЫ</span></div>
-        <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Телефон:"/></label>
-        <label class="form-field-wrap"><input class="form-field" name="email" type="text" placeholder="E-mail:"/></label>
+        <label class="form-field-wrap"><input id="name-3" class="form-field" name="name-3" type="text" placeholder="Имя:" required/></label>
+        <label class="form-field-wrap"><input id="phone-3" class="form-field" name="phone-3" type="text" placeholder="Телефон:" required/></label>
+        <label class="form-field-wrap"><input id="email-3" class="form-field" name="email-3" type="text" placeholder="E-mail:" required/></label>
         <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
     </form>
 </div>
 
 <div class="bc-window window-ok">
     <div class="bc-form form-ok">
-        <div class="close-marker">&#215;</div>
         <div class="title">Ваша заявка отправлена!</div>
-        <button>OK</button>
+        <button class="form-ok-button">OK</button>
     </div>
 </div>
 
