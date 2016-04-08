@@ -318,7 +318,7 @@
             <li>Вы не знаете, <span class="red-text"> где и как </span>ребенок проводит свой день</li>
             <li>Вы не знаете <span class="red-text"> дошел ли<br> </span>Ваш ребёнок до школы,<br> <span class="red-text"> куда отправился </span>после школы</li>
             <li><span class="red-text">Нет гарантии </span>связи с ребенком: забыл телефон,<br> потерял, или села батарея</li>
-            <li><span class="red-text">Ребенок не может </span>экстренно<br> <span class="red-text"> связаться с вами<br></span>, нажатием одной кнопки</li>
+            <li><span class="red-text">Ребенок не может </span>экстренно<br> <span class="red-text"> связаться с вами,<br></span> нажатием одной кнопки</li>
             <li>Вы <span class="red-text"> не можете </span>при<br> необходимости <span class="red-text"> прийти на помощь<br> </span>к ребенку, так как не знаете<br> его местоположения</li>
             <li><span class="red-text">Вы тревожитесь и<br> переживаете за ребенка</span>,<br> когда он от вас далеко</li>
         </ul>
@@ -423,33 +423,35 @@
 
 </div>
 
-<div class="window-callback">
-    <form action="#" class="form-callback">
-        <div class="mark-exit"></div>
+<div class="bc-window window-callback">
+    <form action="#" class="bc-form form-callback">
+        <div class="close-marker">&#215;</div>
         <div class="title">Заполните, и мы Вам перезвоним</div>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваше имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваш телефон:"/></label>
+        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Имя:"/></label>
+        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Телефон:"/></label>
         <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
     </form>
 </div>
-<div class="window-order">
-    <form class="form-order" action="#">
-        <div class="mark-exit"></div>
-        <div class="title">Заполните, чтобы заказать ЧАСЫ</div>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваше имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваш E-mail:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваш телефон:"/></label>
+
+<div class="bc-window window-order">
+    <form class="bc-form form-order" action="#">
+        <div class="close-marker">&#215;</div>
+        <div class="title">Заполните, чтобы заказать <span>ЧАСЫ</span></div>
+        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Имя:"/></label>
+        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Телефон:"/></label>
+        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="E-mail:"/></label>
         <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
-        <div class="text">До конца <span>АКЦИИ</span> осталось:</div>
-        <div class="timer"></div>
     </form>
 </div>
-<div class="window-ok">
-    <div class="mark-exit"></div>
-    <div class="form-ok">
+
+<div class="bc-window window-ok">
+    <div class="bc-form form-ok">
+        <div class="close-marker">&#215;</div>
         <div class="title">Ваша заявка отправлена!</div>
+        <button>OK</button>
     </div>
 </div>
+
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/flipclock.min.js"></script>

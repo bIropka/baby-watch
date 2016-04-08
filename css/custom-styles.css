@@ -22,8 +22,8 @@ button, input[type="submit"] {
     cursor: pointer;
 }
 button::-moz-focus-inner, button, button:hover, button:active, input, input:hover, input:active {
-    outline: none;
-    border: none;
+    outline: none!important;
+    border: none!important;
 }
 
 .content-block {
@@ -31,14 +31,14 @@ button::-moz-focus-inner, button, button:hover, button:active, input, input:hove
     margin: 0 auto;
 }
 
-input::-webkit-input-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;line-height: 45px;}
-input::-moz-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;line-height: 45px;}
-input:-moz-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;line-height: 45px;}
-input:-ms-input-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;line-height: 45px;}
-input:focus::-webkit-input-placeholder {color: transparent;}
-input:focus::-moz-placeholder {color: transparent;}
-input:focus:-moz-placeholder {color: transparent;}
-input:focus:-ms-input-placeholder {color: transparent;}
+form .form-field::-webkit-input-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;}
+form .form-field::-moz-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;}
+form .form-field:-moz-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;}
+form .form-field:-ms-input-placeholder {font-family: "Roboto Condensed Light", sans-serif;font-size: 18px;color: #464f54;}
+form .form-field:focus::-webkit-input-placeholder {color: transparent;}
+form .form-field:focus::-moz-placeholder {color: transparent;}
+form .form-field:focus:-moz-placeholder {color: transparent;}
+form .form-field:focus:-ms-input-placeholder {color: transparent;}
 
 .clearfix {clear: both;}
 
@@ -128,6 +128,14 @@ nav ul li:hover {
     -moz-box-shadow: 5px 5px 0 2px #247a94;
     box-shadow: 3px 3px 0 1px #247a94;
 }
+.header .get-callback, .header .get-callback:hover, .header .get-callback:active,
+.footer .get-callback, .footer .get-callback:hover, .footer .get-callback:active,
+.form-order .form-submit, .form-order .form-submit:hover, .form-order .form-submit:active,
+.bc-form .form-submit, .bc-form .form-submit:hover, .bc-form .form-submit:active,
+.to-order, .to-order:hover, .to-order:active{
+    border: none!important;
+    outline: none!important;
+}
 
 .block-first {position: relative;}
 .block-first .image-girl {
@@ -199,19 +207,21 @@ nav ul li:hover {
     display: inline-block;
     text-transform: uppercase;
 }
-.form-order .form-field-wrap {
+.form-field-wrap {
     display: block;
     margin: 0 auto 15px;
     width: 370px;
 }
-.form-order .form-field {
+.form-field {
     width: 370px;
     height: 45px;
     padding-left: 20px;
     font-size: 18px;
     background: #efefef;
+    outline: none;
+    border: none;
 }
-.form-order .form-submit, .to-order {
+.form-submit, .to-order {
     display: block;
     font-size: 28px;
     width: 300px;
@@ -603,19 +613,31 @@ nav ul li:hover {
     width: 45px;
     height: 45px;
     background: #ececec;
-    font-size: 40px;
-    line-height: 45px;
+    font-size: 45px;
+    line-height: 40px;
     text-align: center;
     color: #4a431b;
     cursor: pointer;
     margin: 20px 15px 10px 0;
     vertical-align: middle;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
 }
 .block-question-answer .mark-question div:after {
     content: '+';
 }
 .block-question-answer .opened .mark-question div:after {
     content: '\2014';
+}
+.block-question-answer .mark-question:hover {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
 }
 .block-question-answer .question {
     display: inline-block;
@@ -755,4 +777,91 @@ nav ul li:hover {
     vertical-align: top;
     float: right;
     margin-top: 10px;
+}
+
+/*** modal windows ***/
+.bc-window {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(51, 51, 51 ,0.3);
+    display: none;
+    z-index: 10;
+}
+.bc-form {
+    position: absolute;
+    width: 445px;
+    height: 500px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: #ffffff;
+    text-align: center;
+    padding: 0;
+    z-index: 10;
+    -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 1px 0 10px rgba(255, 255, 255, 0.3);
+}
+.bc-window .form-callback {
+    height: 305px;
+}
+.bc-window .form-order {
+    height: 360px;
+}
+.bc-window .form-ok {
+    width: 375px;
+    height: 170px;
+}
+.bc-form .close-marker {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 45px;
+    font-weight: 600;
+    position: absolute;
+    top: 7px;
+    right: 5px;
+    z-index: 11;
+    cursor: pointer;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    margin: 0;
+}
+.bc-form .close-marker:hover {
+    -webkit-transform: rotateY(-360deg);
+    -moz-transform: rotateY(-360deg);
+    -ms-transform: rotateY(-360deg);
+    -o-transform: rotateY(-360deg);
+    transform: rotateY(-360deg);
+}
+.bc-form .title {
+    width: 370px;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: none;
+    text-align: left;
+    margin: 20px auto;
+}
+.bc-form .title span {
+    text-transform: uppercase;
+}
+.bc-form .form-field {
+    height: 50px;
+    line-height: 50px;
+}
+.bc-form .form-field::-webkit-input-placeholder {line-height: 50px;}
+.bc-form .form-field::-moz-placeholder {line-height: 50px;}
+.bc-form .form-field:-moz-placeholder {line-height: 50px;}
+.bc-form .form-field:-ms-input-placeholder {line-height: 50px;}
+.bc-form .form-submit {
+    width: 370px;
+    margin-top: 30px;
 }
