@@ -59,15 +59,15 @@
             <span>даже когда вы не вместе!</span>
         </div>
 
-        <form class="form-order" action="#">
+        <form id="order-1" class="form-order" action="mail.php">
             <div class="title">
                 Успейте купить
                 <span>со <span>СКИДКОЙ!</span></span>
             </div>
-            <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваше имя:"/></label>
-            <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваш E-mail:"/></label>
-            <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Ваш телефон:"/></label>
-            <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
+            <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Ваше имя:"/></label>
+            <label class="form-field-wrap"><input class="form-field" name="email" type="text" placeholder="Ваш E-mail:"/></label>
+            <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Ваш телефон:"/></label>
+            <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
             <div class="text">До конца <span>АКЦИИ</span> осталось:</div>
             <div class="timer"></div>
         </form>
@@ -424,23 +424,23 @@
 </div>
 
 <div class="bc-window window-callback">
-    <form action="#" class="bc-form form-callback">
+    <form action="mail.php" class="bc-form form-callback">
         <div class="close-marker">&#215;</div>
         <div class="title">Заполните, и мы Вам перезвоним</div>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Телефон:"/></label>
-        <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
+        <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Имя:"/></label>
+        <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Телефон:"/></label>
+        <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
     </form>
 </div>
 
 <div class="bc-window window-order">
-    <form class="bc-form form-order" action="#">
+    <form class="bc-form form-order" action="mail.php">
         <div class="close-marker">&#215;</div>
         <div class="title">Заполните, чтобы заказать <span>ЧАСЫ</span></div>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Имя:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="Телефон:"/></label>
-        <label class="form-field-wrap"><input class="form-field" type="text" placeholder="E-mail:"/></label>
-        <input class="form-submit" type="submit" value="ЗАКАЗАть"/>
+        <label class="form-field-wrap"><input class="form-field" name="name" type="text" placeholder="Имя:"/></label>
+        <label class="form-field-wrap"><input class="form-field" name="phone" type="text" placeholder="Телефон:"/></label>
+        <label class="form-field-wrap"><input class="form-field" name="email" type="text" placeholder="E-mail:"/></label>
+        <input class="form-submit" name="submit" type="submit" value="ЗАКАЗАть"/>
     </form>
 </div>
 
@@ -455,6 +455,7 @@
 <script src="js/jquery-2.1.4.min.js"></script>
 <script src="js/slick.min.js"></script>
 <script src="js/flipclock.min.js"></script>
+<script src="js/mail-script.js"></script>
 <script src="js/custom-scripts.js"></script>
 </body>
 </html>
