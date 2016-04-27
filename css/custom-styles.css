@@ -147,7 +147,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 .block-first .image-girl {
     width: 320px;
     height: 405px;
-    background: url('../images/girl.png') no-repeat;
+    background: url('../images/girl.jpg') no-repeat;
     background-size: cover;
 }
 .block-first .image-watches {
@@ -380,7 +380,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 }
 
 .block-mechanism {
-    background:  url('../images/background-children.png') no-repeat center;
+    background:  url('../images/background-children.jpg') no-repeat center;
     background-size: cover;
     padding: 50px 0;
 }
@@ -447,7 +447,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 
 .block-geo {
     padding: 40px 0 20px;
-    background: url('../images/background-geo-watch.png') no-repeat left 330px, url('../images/background-geo-devices.png') no-repeat right 150px;
+    background: url('../images/background-geo-watch.png') no-repeat left 330px, url('../images/background-geo-devices.jpg') no-repeat right 150px;
 }
 .block-geo .icon-geo {
     display: inline-block;
@@ -667,7 +667,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     padding: 30px 0 0;
 }
 .block-certificates .content-block {
-    background: url('../images/stamp.png') no-repeat 100% 40px, url('../images/watches-2.png') no-repeat 100% 100%;
+    background: url('../images/stamp.png') no-repeat 100% 40px, url('../images/watches-2.jpg') no-repeat 100% 100%;
 }
 .block-certificates .slider-wrap {
     width: 490px;
