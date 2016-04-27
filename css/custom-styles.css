@@ -185,7 +185,6 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 }
 .block-form-order .form-order {
     width: 410px;
-    height: 490px;
     position: absolute;
     top: -80px;
     right: 0;
@@ -340,6 +339,10 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     color: #161616;
     text-transform: none;
 }
+.block-capabilities .to-order {
+    width: auto;
+    padding: 0 25px;
+}
 
 .block-how-to-order {
     padding: 30px 0 40px;
@@ -445,17 +448,18 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 .block-video iframe {
     border: 15px solid #f2f1f1;
     margin: 30px 0;
+    height: 535px;
 }
 
 .block-geo {
     padding: 40px 0 20px;
-    background: url('../images/background-geo-watch.png') no-repeat left 330px, url('../images/background-geo-devices.jpg') no-repeat right 150px;
+    text-align: center;
 }
 .block-geo .icon-geo {
     display: inline-block;
     width: 42px;
     height: 50px;
-    margin-left: 10px;
+    margin-right: 10px;
     background: url('../images/logo.png') no-repeat center;
     background-size: cover;
     vertical-align: middle;
@@ -463,16 +467,33 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 .block-geo .title {
     display: inline-block;
     vertical-align: middle;
+    width: 95%;
+    margin: 0 auto 30px;
+}
+.geo-watch {
+    display: inline-block;
+    width: 25.5%;
+    padding-top: 31.43%;
+    background: url('../images/background-geo-watch.png') no-repeat center;
+    background-size: cover;
+    vertical-align: bottom;
+}
+.geo-devices {
+    display: inline-block;
+    width: 73.47%;
+    padding-top: 45.1%;
+    background: url('../images/background-geo-devices.jpg') no-repeat center;
+    background-size: cover;
+    vertical-align: bottom;
 }
 .block-geo .text {
     text-align: center;
     color: #020102;
     font-size: 24px;
-    margin-top: 550px;
 }
 
 .block-reviews {
-    padding: 40px 15px;
+    padding: 40px 0;
     background: #f8f7f8;
 }
 .block-reviews .quote {
@@ -490,11 +511,13 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 }
 .block-reviews ul {
     margin: 20px 0;
+    text-align: center;
 }
 .block-reviews ul li {
     width: 300px;
     background: #ffffff;
     padding-bottom: 20px;
+    text-align: left;
 }
 .block-reviews .photo-reviewer {
     display: inline-block;
@@ -536,24 +559,19 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     background: url('../images/background-danger-1.png') no-repeat center, url('../images/background-danger-2.jpg') no-repeat center;
     background-size: auto, cover;
 }
-@media (max-width: 1000px) {
-    .block-danger {
-        background: url('../images/background-danger-2.jpg') no-repeat center;
-        background-size: cover;
-    }
-}
+
 .block-danger .content-block {
     position: relative;
     height: 750px;
 }
 .block-danger .title {
     display: inline-block;
-    width: 300px;
+    width: 250px;
     height: 200px;
     margin: auto;
     position: absolute;
     top: 255px;
-    left: 360px;
+    left: 385px;
     font-family: "Roboto Condensed Light", sans-serif;
     color: #ffffff;
     font-size: 36px;
@@ -850,7 +868,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     transform: rotateY(-360deg);
 }
 .bc-form .title {
-    width: 370px;
+    width: 70%;
     font-size: 24px;
     line-height: 24px;
     text-transform: none;
@@ -869,7 +887,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 .bc-form .form-field:-moz-placeholder {line-height: 50px;}
 .bc-form .form-field:-ms-input-placeholder {line-height: 50px;}
 .bc-form .form-submit {
-    width: 370px;
+    width: 70%;
     margin-top: 30px;
 }
 .form-ok .title {
@@ -917,9 +935,133 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
         float: none;
         margin: 30px 0;
     }
+    .block-advantages .icon-advantage {
+        margin: 0;
+    }
     .block-advantages ul li .text {
-        text-align: left;
+        display: block;
         width: auto;
+        margin-bottom: 30px;
+    }
+    .block-how-to-order ul {
+        text-align: center;
+    }
+    .block-how-to-order ul li {
+        margin: 20px;
+    }
+    .block-mechanism .content-block {
+        background: rgba(255, 255, 255, 0.9);
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+        -moz-box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 1px 0 10px rgba(255, 255, 255, 0.5);
+        padding: 50px 0;
+        height: auto;
+    }
+    .block-mechanism .text {
+        float: none;
+        width: 90%;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+    .block-mechanism p, .block-mechanism .narrow-text {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .block-mobile-apps ul li, .block-mobile-apps ul li:nth-child(2) {
+        margin-bottom: 30px;
+    }
+    .block-reviews ul li, .block-reviews ul li:nth-child(2) {
+        margin: 20px 10px;
+    }
+    .block-danger {
+        width: 100%;
+        background: url('../images/background-danger-2.jpg') no-repeat center;
+        background-size: cover;
+        text-align: center;
+    }
+    .block-danger .content-block {
+        height: auto;
+    }
+    .block-danger .title {
+        width: 90%;
+        height: auto;
+        margin: 30px auto;
+        position: static;
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+    .block-danger ul li {
+        display: inline-block;
+        position: static;
+        vertical-align: top;
+        margin: 20px 10px;
+        text-align: left;
+    }
+    .block-danger ul li:nth-child(1) {
+        width: 300px;
+    }
+    .block-danger ul li:nth-child(2) {
+        width: 300px;
+        height: auto;
+        text-align: left;
+    }
+    .block-danger ul li:nth-child(3) {
+        width: 300px;
+        height: auto;
+    }
+    .block-danger ul li:nth-child(4) {
+        width: 300px;
+        height: auto;
+        text-align: left;
+    }
+    .block-danger ul li:nth-child(5) {
+        width: 300px;
+        height: auto;
+    }
+    .block-danger ul li:nth-child(6) {
+        width: 300px;
+        height: auto;
+        text-align: left;
+    }
+    .block-question-answer .title {
+        font-size: 36px;
+    }
+    .block-question-answer ul li {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+    .block-question-answer .question {
+        margin: 20px 0 10px;
+        width: 85%;
+    }
+    .block-question-answer .answer {
+        display: none;
+        width: 95%;
+        padding: 20px;
+        margin: 0 auto;
+    }
+    .block-certificates .content-block {
+        background: none;
+    }
+    .block-certificates .slider-wrap {
+        width: 490px;
+        height: 350px;
+        position: relative;
+        margin: 50px auto;
+    }
+    .control-left {
+        left: -20px;
+    }
+    .control-right {
+        right: -5px;
+    }
+    .footer-left, .footer-center, .footer-right {
+        float: none;
+        margin: 20px 10px;
     }
 }
 
@@ -930,7 +1072,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     nav ul li a {
         line-height: 30px;
     }
-    .block-form-order .title {
+    .title {
         font-size: 32px;
         line-height: 32px;
     }
@@ -940,5 +1082,57 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     }
     .block-form-order .form-order {
         width: 310px;
+    }
+    .block-capabilities ul li {
+        display: block;
+        width: 100%;
+        margin: 15px 0;
+        text-align: center;
+    }
+    .block-capabilities .image-capability {
+        margin: 0;
+    }
+    .block-capabilities ul li .text {
+        display: block;
+        width: auto;
+        margin-bottom: 30px;
+    }
+    .block-video iframe {
+        height: 300px;
+    }
+    .block-question-answer .title {
+        font-size: 32px;
+    }
+    .block-question-answer .question {
+        font-size: 18px;
+        width: 75%;
+    }
+    .block-certificates .slider-wrap {
+        width: 90%;
+        height: auto;
+        position: relative;
+        margin: 50px auto;
+    }
+    .block-certificates .slider-wrap .slide, .block-certificates .slider-wrap .slide img {
+        margin: 0 auto;
+    }
+    .control-left {
+        left: 0;
+    }
+    .control-right {
+        right: 5px;
+    }
+    .bc-form {
+        width: 320px;
+    }
+    .bc-window .form-callback {
+        height: 330px;
+    }
+    .bc-window .form-order {
+        height: 400px;
+    }
+    .bc-window .form-ok {
+        width: 375px;
+        height: 170px;
     }
 }

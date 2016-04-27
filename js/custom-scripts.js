@@ -16,7 +16,16 @@ $(document).ready(function () {
         nextArrow: '.control-right',
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 540,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
     });
 
     var myTimer = $('.timer').FlipClock({
