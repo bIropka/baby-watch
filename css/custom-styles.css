@@ -444,6 +444,8 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     -webkit-box-shadow: 5px 5px 0 2px #247a94;
     -moz-box-shadow: 5px 5px 0 2px #247a94;
     box-shadow: 3px 3px 0 1px #247a94;
+    width: auto;
+    padding: 0 25px;
 }
 .block-video iframe {
     border: 15px solid #f2f1f1;
@@ -518,6 +520,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     background: #ffffff;
     padding-bottom: 20px;
     text-align: left;
+    vertical-align: top;
 }
 .block-reviews .photo-reviewer {
     display: inline-block;
@@ -853,19 +856,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
     right: 5px;
     z-index: 11;
     cursor: pointer;
-    -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
-    transition: 1s;
     margin: 0;
-}
-.bc-form .close-marker:hover {
-    -webkit-transform: rotateY(-360deg);
-    -moz-transform: rotateY(-360deg);
-    -ms-transform: rotateY(-360deg);
-    -o-transform: rotateY(-360deg);
-    transform: rotateY(-360deg);
 }
 .bc-form .title {
     width: 70%;
