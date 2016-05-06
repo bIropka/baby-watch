@@ -742,7 +742,7 @@ nav ul li a, nav ul li a:hover, nav ul li a:active, nav ul li a:focus {
 
 .footer {
     padding: 10px 0 30px;
-    background: url('../images/background-footer.jpg') no-repeat;
+    background: url('../images/background-footer.jpg') no-repeat 35% center;
     background-size: cover;
     text-align: center;
 }
